@@ -80,7 +80,6 @@ class _MyHomePageState extends State<MyHomePage> {
           elevation: 5,
           color: Colors.white,
           child: SingleChildScrollView(
-
             child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
@@ -141,16 +140,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 20, // The divider's height extent.
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       // Padding(padding: const EdgeInsets.fromLTRB(50,50,0,0)),
                       Column(
                         mainAxisSize: MainAxisSize.min,
                         children:
-                            // ignore: prefer_const_literals_to_create_immutables
                             [
-                          const Padding(
-                            padding: EdgeInsets.only(left: 56),
+                            Padding(
+                            padding: const EdgeInsets.only(left: 8.0),
                             child: Text(
                               'Foodie Points',
                               style: TextStyle(
